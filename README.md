@@ -4,7 +4,7 @@
 
 Deployed at ![https://cbarber1984.github.io/taskmaster-pro/]
 
-## Learning Goals
+## What I learned
 - Learn to consult documentation when faced with new libraries.
 - Traverse and manipulate the DOM using jQuery methods.
 - Attach delegated browser events to elements with jQuery methods.
@@ -13,3 +13,6 @@ Deployed at ![https://cbarber1984.github.io/taskmaster-pro/]
 - Create responsive layouts using Bootstrap's grid system.
 - Use the UI components Bootstrap provides us.
 - Leverage Bootstrap's utility classes to avoid creating unnecessary custom CSS.
+- Incorporate additional CDN links into a project.
+- Skim new documentation to quickly learn about new tools.
+- Use jQuery extensions to enable draggable elements.
