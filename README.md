@@ -1,6 +1,6 @@
 # Taskmaster-Pro
 
-![assets/images/taskmaster_social_card.png]
+![sreenshot](assets/images/taskmaster_social_card.png)
 
 Deployed at ![https://cbarber1984.github.io/taskmaster-pro/]
 
@@ -16,3 +16,7 @@ Deployed at ![https://cbarber1984.github.io/taskmaster-pro/]
 - Incorporate additional CDN links into a project.
 - Skim new documentation to quickly learn about new tools.
 - Use jQuery extensions to enable draggable elements.
+- Learn how to use jQuery UI's Datepicker widget with date-input form fields.
+- Implement another third-party JavaScript library using a CDN link.
+- Learn how JavaScript natively handles date and time functionality.
+Use Moment.js to make handling JavaScript date and time functionality a lot easier.
