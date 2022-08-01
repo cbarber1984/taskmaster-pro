@@ -3,8 +3,6 @@ var tasks = {};
 var auditTask = function(taskEl){
  // get date from task element
  var date = $(taskEl).find("span").text().trim();
- //ensure it worked
- console.log(date);
 
  // convert date to moment object at 5:00pm
  var time = moment(date, "L").set("hour", 17);
@@ -56,7 +54,6 @@ var loadTasks = function() {
 
   // loop over object properties
   $.each(tasks, function(list, arr) {
-    console.log(list, arr);
     // then loop over sub-array
     arr.forEach(function(task) {
       createTask(task.text, task.date, list);
@@ -266,7 +263,6 @@ $(".card .list-group").sortable({
       date: date
     });
   });
-  console.log(tempArr);
 
   // trim down list's ID to match object property
   var arrName = $(this)
@@ -283,17 +279,14 @@ $("#trash").droppable({
   accept: ".card .list-group-item",
   tolerance: "touch",
   drop: function(event, ui){
-    console.log("drop");
     ui.draggable.remove();
   },
   
   over: function(event, ui){
-    console.log("over");
     $(".bottom-trash").addClass("bottom-trash-active");
   },
   
   out: function(event, ui){
-    console.log("out");
     $(".bottom-trash").removeClass("bottom-trash-active")
   }
 });
@@ -305,7 +298,6 @@ $("#modalDueDate").datepicker({
 setInterval(function(){
   $(".card .list-group-item").each(function(index, el){
     auditTask(el);
-    console.log("tasks audited");
   });
 }, 1800000);
 
